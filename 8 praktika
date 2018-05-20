@@ -1,0 +1,15 @@
+#include <fstream>
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+	string text;
+	cin >> text;
+	ofstream fout("text.txt");
+	fout << text;
+	fout.close();
+	system("pause");
+	return 0;
+}
